@@ -1,0 +1,78 @@
+JFDML JFormDesigner: "8.2.1.0.348" Java: "21.0.1" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.BorderLayout ) ) {
+			name: "this"
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class net.miginfocom.swing.MigLayout ) {
+				"$layoutConstraints": "hidemode 3"
+				"$columnConstraints": "[fill][fill][fill][fill][fill]"
+				"$rowConstraints": "[][][][][][][][]"
+			} ) {
+				name: "panelContainer"
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "lblLoginDesc"
+					"text": "LOGIN"
+					"font": new java.awt.Font( "Segoe UI", 0, 27 )
+					"foreground": new java.awt.Color( 0, 0, 0, 255 )
+				}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+					"value": "cell 1 1,gapx 70,gapy 50"
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "infoDesc"
+					"text": "Please fill in the information below. Create account if you do not have one."
+				}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+					"value": "cell 1 3 4 1,gapx 70"
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "lblUsername"
+					"text": "Username:"
+					"font": &Font0 new java.awt.Font( "Dialog", 0, 12 )
+				}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+					"value": "cell 1 5,gapx 70"
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "txtUsername"
+				}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+					"value": "cell 2 5 3 1"
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "lblPassword"
+					"text": "Password:"
+					"font": #Font0
+				}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+					"value": "cell 1 6,gapx 70"
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "txtPassword"
+				}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+					"value": "cell 2 6 3 1"
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "btnLogin"
+					"text": "Login"
+					"font": #Font0
+				}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+					"value": "cell 4 7,wmax 63,gapx 70"
+				} )
+			}, new FormLayoutConstraints( class java.lang.String ) {
+				"value": "Center"
+			} )
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.FlowLayout ) {
+				"alignment": 2
+			} ) {
+				name: "panelContLogo"
+				"preferredSize": new java.awt.Dimension( 10, 50 )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "lblLogo"
+				} )
+			}, new FormLayoutConstraints( class java.lang.String ) {
+				"value": "North"
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 85, 10 )
+			"size": new java.awt.Dimension( 695, 430 )
+		} )
+	}
+}

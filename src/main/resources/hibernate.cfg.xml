@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD//EN"
+        "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory>
+
+        <!--  jimBoYz Ni ChOy -->
+        <property name="hibernate.ejb.persistenceUnitName">jimboyz</property>
+        <property name="hibernate.connection.driver_class">com.mysql.cj.jdbc.Driver</property>
+<!--        <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/cims12172024</property>-->
+        <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/cims03272025</property>
+        <property name="hibernate.connection.username">root</property>
+
+        <!--    <property name="hibernate.connection.password"></property>-->
+
+<!--        <property name="hibernate.search.failure_handler">-->
+<!--            org.hibernate.search.util.impl.logging.FailSafeFailureHandler-->
+<!--        </property>-->
+
+<!--        <property name="hibernate.search.failure_handler">fail</property>-->
+
+        <!--    <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>-->
+        <property name="hbm2ddl.auto">update</property>
+        <property name="show_sql">true</property>
+        <property name="hibernate.search.backend.lucene_version">9.11.1</property>
+        <mapping class="com.jimboyz.cims.model.dao.Student"/>
+        <mapping class="com.jimboyz.cims.model.dao.user.User"/>
+        <mapping class="com.jimboyz.cims.model.dao.medical.MedicalRecord"/>
+
+    </session-factory>
+</hibernate-configuration>
