@@ -1,1 +1,1 @@
-Unfinished project (work in progress).
+Unfinished project ~~(work in progress)~~.
